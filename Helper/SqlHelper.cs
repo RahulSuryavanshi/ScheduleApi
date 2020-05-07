@@ -53,7 +53,7 @@ namespace DAL
             return table;
         }
 
-        internal static DataTable tbl(string commnd, SqlParameter[] param)
+        public  DataTable tbl(string commnd, SqlParameter[] param)
         {
             using (SqlConnection con = new SqlConnection(CONNECTION_STRING))
             {
@@ -170,7 +170,7 @@ namespace DAL
             }
             return (result > 0);
         }
-        internal static int ExecuteNonQueryInt(string CommandName, CommandType cmdType, SqlParameter[] pars)
+        public int ExecuteNonQueryInt(string CommandName, CommandType cmdType, SqlParameter[] pars)
         {
             int result = 0;
             using (SqlConnection con = new SqlConnection(CONNECTION_STRING))

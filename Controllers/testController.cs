@@ -45,11 +45,7 @@ namespace ScheduleApi.Controllers
                 return ListStates;
             }
         }
-        // GET: api/test/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+       
 
         // POST: api/test
         public HttpResponseMessage Post([FromBody]City objCity)

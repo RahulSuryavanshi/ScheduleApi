@@ -109,6 +109,19 @@ namespace DAL
                 return System.DBNull.Value;
             }
         }
+
+        public object MakeTimeDBSafe(string aStr)
+        {
+            TimeSpan outDate;
+            if (TimeSpan.TryParse(aStr, out outDate))
+            {
+                return Convert.ToDateTime(aStr).ToString("HH:mm");
+            }
+            else
+            {
+                return System.DBNull.Value;
+            }
+        }
         public string DateRead(DateTime? _str)
         {
             return string.Format("{0:dd/MM/yyyy}", _str);

@@ -3,3 +3,17 @@
 ################################################################################
 
 /ionic-app/TestApp/e2e
+/ionic-app/TestApp/tslint.json
+/ionic-app/TestApp/tsconfig.spec.json
+/ionic-app/TestApp/tsconfig.json
+/ionic-app/TestApp/tsconfig.app.json
+/ionic-app/TestApp/package.json
+/ionic-app/TestApp/package-lock.json
+/ionic-app/TestApp/karma.conf.js
+/ionic-app/TestApp/ionic.config.json
+/ionic-app/TestApp/browserslist
+/ionic-app/TestApp/angular.json
+/ionic-app/TestApp/.gitignore
+/bin
+/ionic-app/TestApp/src
+/obj/Debug
